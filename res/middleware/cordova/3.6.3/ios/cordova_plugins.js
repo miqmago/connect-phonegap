@@ -8,6 +8,20 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.admob.google/www/admob.js",
+        "id": "com.admob.google",
+        "clobbers": [
+            "window.admob"
+        ]
+    },
+    {
+        "file": "plugins/com.connectivity.monitor/www/connectivity.js",
+        "id": "com.connectivity.monitor",
+        "clobbers": [
+            "window.connectivity"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
         "id": "org.apache.cordova.splashscreen.SplashScreen",
         "clobbers": [
@@ -502,6 +516,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "nl.x-services.plugins.insomnia": "4.0.1",
+    "com.admob.google": "2.0.4",
+    "com.connectivity.monitor": "1.0.2",
     "org.apache.cordova.splashscreen": "0.3.1",
     "org.apache.cordova.file-transfer": "0.4.4",
     "org.apache.cordova.device": "0.2.10",
