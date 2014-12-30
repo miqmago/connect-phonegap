@@ -8,6 +8,20 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.admob.google/www/admob.js",
+        "id": "com.admob.google.AdMobAds",
+        "clobbers": [
+            "window.admob"
+        ]
+    },
+    {
+        "file": "plugins/com.connectivity.monitor/www/connectivity.js",
+        "id": "com.connectivity.monitor.connectivity",
+        "clobbers": [
+            "window.connectivity"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
         "id": "org.apache.cordova.splashscreen.SplashScreen",
         "clobbers": [
@@ -48,6 +62,20 @@ module.exports = [
         "id": "org.apache.cordova.network-information.Connection",
         "clobbers": [
             "Connection"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.console/www/console-via-logger.js",
+        "id": "org.apache.cordova.console.console",
+        "clobbers": [
+            "console"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.console/www/logger.js",
+        "id": "org.apache.cordova.console.logger",
+        "clobbers": [
+            "cordova.logger"
         ]
     },
     {
@@ -93,10 +121,31 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.dialogs/www/android/notification.js",
-        "id": "org.apache.cordova.dialogs.notification_android",
-        "merges": [
-            "navigator.notification"
+        "file": "plugins/org.apache.cordova.geolocation/www/Coordinates.js",
+        "id": "org.apache.cordova.geolocation.Coordinates",
+        "clobbers": [
+            "Coordinates"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.geolocation/www/PositionError.js",
+        "id": "org.apache.cordova.geolocation.PositionError",
+        "clobbers": [
+            "PositionError"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.geolocation/www/Position.js",
+        "id": "org.apache.cordova.geolocation.Position",
+        "clobbers": [
+            "Position"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.geolocation/www/geolocation.js",
+        "id": "org.apache.cordova.geolocation.geolocation",
+        "clobbers": [
+            "navigator.geolocation"
         ]
     },
     {
@@ -268,6 +317,20 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/org.apache.cordova.contacts/www/ios/contacts.js",
+        "id": "org.apache.cordova.contacts.contacts-ios",
+        "merges": [
+            "navigator.contacts"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.contacts/www/ios/Contact.js",
+        "id": "org.apache.cordova.contacts.Contact-iOS",
+        "merges": [
+            "Contact"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.camera/www/CameraConstants.js",
         "id": "org.apache.cordova.camera.Camera",
         "clobbers": [
@@ -289,7 +352,7 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js",
+        "file": "plugins/org.apache.cordova.camera/www/ios/CameraPopoverHandle.js",
         "id": "org.apache.cordova.camera.CameraPopoverHandle",
         "clobbers": [
             "CameraPopoverHandle"
@@ -429,8 +492,8 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.file/www/android/FileSystem.js",
-        "id": "org.apache.cordova.file.androidFileSystem",
+        "file": "plugins/org.apache.cordova.file/www/ios/FileSystem.js",
+        "id": "org.apache.cordova.file.iosFileSystem",
         "merges": [
             "FileSystem"
         ]
@@ -453,6 +516,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "nl.x-services.plugins.insomnia": "4.0.1",
+    "com.admob.google": "2.0.4",
+    "com.connectivity.monitor": "1.0.2",
     "org.apache.cordova.splashscreen": "0.3.1",
     "org.apache.cordova.file-transfer": "0.4.4",
     "org.apache.cordova.device": "0.2.10",

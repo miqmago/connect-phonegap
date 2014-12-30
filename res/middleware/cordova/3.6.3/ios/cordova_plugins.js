@@ -9,14 +9,14 @@ module.exports = [
     },
     {
         "file": "plugins/com.admob.google/www/admob.js",
-        "id": "com.admob.google",
+        "id": "com.admob.google.AdMobAds",
         "clobbers": [
             "window.admob"
         ]
     },
     {
         "file": "plugins/com.connectivity.monitor/www/connectivity.js",
-        "id": "com.connectivity.monitor",
+        "id": "com.connectivity.monitor.connectivity",
         "clobbers": [
             "window.connectivity"
         ]
